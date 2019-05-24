@@ -1,0 +1,593 @@
+@font-face { font-family: HelveticaNeue-Light; src: url(../fonts/HelveticaNeue-Light.otf); }
+@font-face { font-family: HelveticaNeue-Thin; src: url(../fonts/HelveticaNeue-Thin.ttf); }
+@font-face { font-family: 'Helvetica Neue'; src: url(../fonts/HelveticaNeue.ttf); }
+@font-face { font-family: 'Helvetica Neue Regular'; src: url(../fonts/helvetica-neue-regular.ttf); }
+@font-face { font-family: "Brush Script MT"; src: url(../fonts/BRUSHSCI2.TTF); }
+@font-face { font-family: "Brush Script MT Italic"; src: url(../fonts/BRUSHSCI.ttf); }
+
+body, html {
+    height: 100%;
+}
+
+.resize {
+    font-size: 5vw;
+}
+    #mainNav {
+        height: 10.60445387062566vh;
+        min-height: 90px;
+        background-color: white;
+    }
+
+    #containerNav {
+        display: flex;
+        width: 100%;
+        padding-right: 5.208vw;
+        padding-left: 5.208vw;
+        margin: auto;
+        font-size: 0.83vw;
+        font-family: HelveticaNeue-Light, sans-serif;
+        text-transform: uppercase;
+        justify-content: space-between;
+    }
+
+    #imgHeader {
+        margin-left: 1.041vw;
+        width: 12.5vw;
+    }
+
+    .divImgFullscreen {
+        margin-top: 10.60445387062566vh;
+        height: 89.395vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    #divImgFullscreenIndex {
+        background-image: url("../img/LoonyLandhome.jpg");
+        height: 100vh;
+        bottom: 5vh;
+    }
+
+    #divImgFullscreenContactUs {
+        background-image: url("../img/contact-us.jpg");
+    }
+
+    #ImgTitleIndex {
+        font-size: 12vw;
+        font-family: "Brush Script MT Italic", serif;
+        color: #ffffff;
+
+        position: absolute;
+        bottom: 7vh;
+        left: 55vw;
+    }
+
+    #ImgTitleIndex h1 {
+        font-size: 10vw;
+        font-family: "Brush Script MT Italic", serif;
+        color: #ffffff;
+    }
+
+    #contentindex {
+        margin-top: 16.11876988335101vh;
+        margin-bottom: 16.11876988335101vh;
+        font-family: "Helvetica Neue", sans-serif;
+        text-transform: uppercase;
+        font-size: 0.9375vw;
+        color: #261C46;
+    }
+
+    .ImgContentIndex {
+        max-width: 70%;
+        height: auto;
+    }
+
+    #footerinfo {
+        margin-top: 21.20890774125133vh;
+
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-size: 1.041vw;
+        font-family: HelveticaNeue-Thin, sans-serif;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+
+    #socialnetwork {
+        margin-bottom: 2.651vh;
+        margin-left: auto;
+        margin-right: auto;
+        width: 10.416vw;
+
+    }
+
+    #socialnetwork:hover img {
+        opacity: 0.5;
+        -webkit-transition: all .1s .1s;
+        -moz-transition: all .1s .1s;
+        -o-transition: all .1s .1s;
+        transition: all .1s .1s;
+
+    }
+
+    #socialnetwork img {
+        margin-right: 0.26vw;
+        margin-left: 0.26vw;
+        width: 1.14583333333333vw;
+
+        max-width: 100%;
+        height: auto;
+    }
+
+    #socialnetwork img:hover {
+        opacity: 1;
+
+        -webkit-transition: all .1s .1s;
+        -moz-transition: all .1s .1s;
+        -o-transition: all .1s .1s;
+        transition: all .1s .1s;
+    }
+
+    #navbarResponsive {
+        position: relative;
+    }
+
+    #nav {
+        right: 0;
+        position: absolute;
+        top: 33%;
+    }
+
+    #mySidenav {
+        display: none;
+    }
+
+    /*--- DROPDOWN ---*/
+    .dropdown {
+        float: right;
+        margin-left: 6.51vw;
+        margin-right: 0;
+    }
+
+    .dropbtn {
+        background-color: white;
+        color: #261C46;
+        padding: 1.3vw;
+        font-size: 0.83vw;
+        border: none;
+        text-transform: uppercase;
+        font-family: HelveticaNeue-Light, sans-serif;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: HelveticaNeue-Light, sans-serif;
+
+        top: 4.24178154825027vh;
+        left: 50%;
+        margin-left: -80px;
+
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover, a:visited, a:active {
+        background-color: #ddd;
+        text-decoration: none;
+        color: #261C46;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: white;
+    }
+
+    .dropdown-content:before {
+
+        content: '';
+        display: block;
+        border-color: transparent transparent rgb(190, 190, 190) transparent;
+        border-style: solid;
+        border-width: 0.5208vw; /* The border on the drop down box  */
+        position: absolute;
+        top: -2.12089077412513vh;
+        left: 50%;
+        margin-left: -0.5208vw;
+
+    }
+
+    .dropdown img {
+        height: 2.54506892895016vh;
+        width: 1.25vw;
+    }
+
+    /* --------- */
+    .langueactive {
+        opacity: 1;
+    }
+
+    .langueinactive {
+        opacity: 0.5;
+    }
+
+    .languagea:hover, .languagea:visited, .languagea:link, .languagea:active {
+        text-decoration: none;
+    }
+
+    .copyright-text a {
+        color: #261C46;
+    }
+
+    .copyright-text a:hover, a:visited, a:link, a:active {
+        color: #261C46;
+    }
+/* Contact Us */
+
+
+#contentcontactus {
+    margin-top: 16.11876988335101vh;
+    margin-bottom: 16.11876988335101vh;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 0.9375vw;
+    color: #261C46;
+}
+
+#firstname {
+    max-width: 49%;
+    margin-right: 1%;
+}
+
+#lastname {
+    max-width: 49%;
+    margin-left: 1%;
+}
+#contactustext {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 10%;
+}
+
+#subtext {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 10%;
+}
+
+#subtext:after {
+    position: absolute;
+    content: '';
+    border-bottom: 1px solid #d2d7da;
+    width: 150%;
+    transform: translateX(-50%);
+    bottom: -10px;
+    left: 50%;
+}
+
+#submitcontactus {
+    background-color: white;
+    color: #261C46;
+    border: 1px solid #555555;
+    font-size: 1vw;
+    margin-top: 1vh;
+    border-radius: 0rem;
+}
+/* ------------ */
+
+/* Career */
+#divImgFullscreenCareer {
+    background-image: url("/img/career/team.jpg");
+}
+
+.ImgTitlePage {
+    font-size: 6.25vw;
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #ffffff;
+
+    height: 100%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content: center;
+}
+.ImgTitlePage h1{
+    font-size: 6.25vw;
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #ffffff;
+}
+
+#contentcareer {
+    text-align: center;
+    margin-top: 10vh;
+    font-size: 1.4vw;
+    color : #707070;
+}
+
+#contentcareer p{
+    font-family: 'Helvetica Neue', sans-serif;
+    margin-top: 2%;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+ }
+#contentcareer h2{
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+
+#contentcareer img{
+    width: 90%;
+    height: auto;
+    margin-left: 2%;
+}
+#contentcareer .col-md-12 {
+    margin-top: 5%;
+}
+#contentcareer .row {
+    margin-top: 5%;
+}
+
+#buttoncareerdiv {
+    border-bottom: 1px solid #707070;
+    border-top: 1px solid #707070;
+    height: 28vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#buttoncareer {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 2.4vw;
+    color: white;
+    background-color: #707070;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 0rem;
+}
+/*---------------------*/
+
+/* Our Story */
+#divImgFullscreenOurStory {
+    background-image: url("/img/career/team.jpg");
+}
+#contentourstory {
+    text-align: center;
+    margin-top: 10vh;
+    font-size: 1vw;
+    color : #707070;
+}
+
+#contentourstory p{
+    font-family: 'Helvetica Neue', sans-serif;
+    margin-top: 2%;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#contentourstory h2{
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+#contentourstory .col-md-12 {
+    margin-top: 5%;
+}
+
+.ourstorypeopleimg {
+    border-radius: 50%;
+}
+#ourstorypeoplediv {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+#ourstorypeoplediv div
+{
+    display:inline-block;
+    float: left;
+}
+#ourstorypeoplediv div img
+{
+    width: 50%;
+    margin-bottom: 20px;
+}
+#ourstoryimgcomingsoon img {
+    width: 80%;
+    height: auto;
+    margin-left: 2%;
+}
+
+#ourstoryimgcomingsoon h3 {
+    margin-top: 2%;
+}
+
+#dessindiv img {
+    height: auto;
+    width: 70%;
+}
+
+#screenjeu {
+    width: 80%;
+    height: auto;
+}
+/* ---------------- */
+
+/* -------------------------------*/
+
+#divImgFullscreenLoonyLand {
+        background-image: url("../img/LoonyLand.jpg");
+    }
+
+#ImgTitleIndexLoonyLand {
+    font-size: 12vw;
+    font-family: "Brush Script MT Italic", serif;
+    color: #ffffff;
+
+    position: absolute;
+    bottom: 7vh;
+    left: 5vw;
+}
+
+#ImgTitleIndexLoonyLand h1 {
+    font-size: 10vw;
+    font-family: "Brush Script MT Italic", serif;
+    color: #ffffff;
+}
+
+#contentLoonyLand {
+    text-align: center;
+    margin-top: 10vh;
+    font-size: 1vw;
+    color : #707070;
+}
+
+#contentLoonyLand p{
+    font-family: 'Helvetica Neue', sans-serif;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.15vw;
+}
+#contentLoonyLand h2{
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+#contentLoonyLand .col-md-12 {
+    margin-top: 1%;
+}
+#contentLoonyLand .row {
+    margin-top: 3%;
+}
+
+#IconLoonyLand {
+max-width: 35%;
+height: auto;
+}
+
+.margincentered {
+    margin: auto !important;
+}
+
+.LoonyLandDesignimg {
+    max-width: 60%;
+    height: auto;
+}
+
+.LoonyLandDesignimgDoublage {
+    max-width: 75%;
+}
+
+.padding-0 {
+    padding: 0 !important;
+}
+
+.LoonyLandMargintop {
+    margin-top: 5%;
+}
+.LoonyLandMarginbottom {
+    margin-bottom: 5%;
+}
+/* -------------------------------*/
+
+
+/* ------------------------------- */
+#contentComingSoon {
+    text-align: center;
+    margin-top: 10vh;
+    font-size: 1vw;
+    color : #707070;
+}
+
+#contentComingSoon p{
+    font-family: 'Helvetica Neue', sans-serif;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    font-size: 1.15vw;
+}
+#contentLComingSoon h2{
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+#contentLComingSoon h1{
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 2.3vw;
+}
+#contentComingSoon img {
+    margin-top: 1%;
+}
+
+#contentComingSoon .col-md-12 {
+    margin-top: 5%;
+}
+/* ------------------------------- */
+
+/* ------------------------------- */
+#contentLegalNotice {
+    text-align: center;
+    margin-top: 20vh;
+    font-size: 1vw;
+    color : #707070;
+}
+
+#contentLegalNotice p{
+    font-family: 'Helvetica Neue', sans-serif;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    font-size: 1.15vw;
+}
+#contentLegalNotice h2{
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+#contentLegalNotice h1{
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 2.3vw;
+}
+#contentLegalNotice img {
+    margin-top: 1%;
+}
+
+#contentLegalNotice .col-md-12 {
+    margin-top: 10%;
+}
+/* ------------------------------- */
